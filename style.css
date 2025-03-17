@@ -288,4 +288,12 @@ footer {
   h1 {
     font-size: 3rem;
   }
+
+  #contact {
+    background-color: #242424;
+    padding: 1rem;
+  }
+  footer {
+    background-color: #242424;
+  }
 }
