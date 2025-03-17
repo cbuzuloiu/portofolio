@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  color: #ebebeb;
+}
+
+body {
+  background-color: #151515;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  background-color: #242424;
+  padding: 0 16.5rem;
+}
+
+/* TYPOGRAFY */
+h1 {
+  font-size: 6.4rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+/* CUSTOM STYLE */
+
+.green {
+  color: #4ee1a0;
+}
+
+.name {
+  font-size: 2.4rem;
+  letter-spacing: 3px;
+  /* text-transform: uppercase; */
+}
+
+.logo {
+  width: 4rem;
+}
+
+.underlined {
+  text-decoration: underline;
+  text-decoration-color: #4ee1a0;
+  text-underline-offset: 12px; /* Adjusts distance from text */
+  text-decoration-thickness: 6px; /* Adjust thickness */
+}
+
+ul {
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+.btn {
+  border-bottom: solid 2px #4ee1a0;
+  /* display: inline-block; */
+  padding-bottom: 5px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #ebebeb;
+}
+
+a:hover {
+  color: #4ee1a0;
+  cursor: pointer;
+}
+
+a:active {
+  color: #12804e;
+}
+/* HEADER SECTION */
+
+.title-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.presentation-photo {
+  margin-top: 3.2rem;
+  padding-bottom: 5rem;
+  display: flex;
+  gap: 5rem;
+}
+
+.photo img {
+  width: 300px;
+  border-radius: 1rem;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.presentation-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+/* SKILL SECTION */
+
+#skill {
+  margin-top: 3.2rem;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+#skill ul {
+  display: flex;
+  gap: 3.5rem;
+  /* justify-content: space-between; */
+  /* margin-bottom: 3.2rem; */
+  flex-wrap: wrap;
+}
+
+/* #skill li {
+  flex-wrap: nowrap;
+} */
+
+/* SECTION PROJECTS */
+
+#projects-content {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+  flex-wrap: wrap;
+  gap: 5rem 10rem;
+}
+
+.project-card img {
+  display: block;
+  width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card {
+  background-color: #343434;
+  width: 30rem;
+  height: 50rem;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 15px 15px rgb(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-nav {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+  background-color: #343434;
+  padding: 3.5rem;
+}
+
+#contact > p {
+  padding-top: 2rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background-color: #343434;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* --- */
+
+@media only screen and (max-width: 1280px) {
+  h1 {
+    font-size: 5.4rem;
+  }
+}
+
+@media only screen and (max-width: 1175px) {
+  h1 {
+    font-size: 4.4rem;
+  }
+}
+
+/* @media only screen and (max-width: 1084px) {
+  h1 {
+    font-size: 5.4rem;
+  }
+
+  .presentation-photo {
+    flex-direction: column;
+  }
+
+  .photo {
+    text-align: center;
+  }
+
+  .presentation {
+    gap: 3rem;
+  }
+} */
+
+@media only screen and (max-width: 1084px) {
+  .container {
+    /* padding: 0 16.5rem; */
+    padding: 0 12.5rem;
+  }
+}
+
+@media only screen and (max-width: 1003px) {
+  .container {
+    padding: 0 10rem;
+  }
+}
+
+@media only screen and (max-width: 955px) {
+  .container {
+    padding: 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 854px) {
+  h1 {
+    font-size: 5.4rem;
+  }
+
+  .presentation-photo {
+    flex-direction: column;
+  }
+
+  .photo {
+    text-align: center;
+  }
+
+  .presentation {
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 854px) {
+  h1 {
+    font-size: 4.4rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+}
+
+@media only screen and (max-width: 447px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
